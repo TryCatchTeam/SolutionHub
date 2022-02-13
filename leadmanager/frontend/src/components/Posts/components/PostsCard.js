@@ -9,6 +9,7 @@ import { Stack } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 import Box from "@mui/material/Box";
 import { Chip } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ListItem = styled("li")(({ theme }) => ({
   margin: theme.spacing(0.5),
@@ -136,7 +137,8 @@ export default function PostsCard() {
               </Grid>
               <Grid item xs={12} sm={12} md={2}>
                 <Typography sx={{ cursor: "pointer" }} variant="body2">
-                  <button className="btn btn-primary">Details</button>
+                  <Link to='/skcomponents/Project'><button className="btn btn-primary">Details</button></Link>
+                  
                 </Typography>
               </Grid>
             </Grid>

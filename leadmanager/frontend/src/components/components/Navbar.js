@@ -19,8 +19,8 @@ const pages = [
   { title: "Home", path: "/" },
   { title: "Dashboard", path: "/Dashboard/Dashboard" },
   { title: "Posts", path: "/Posts/Posts" },
-  { title: "Extra", path: "/SendPost/SendPostForm" },
-  { title: "Extra2", path: "/SendReq/SendReqForm" },
+  { title: "PostJob", path: "/SendPost/SendPostForm" },
+  { title: "Apply", path: "/SendReq/SendReqForm" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -54,7 +54,7 @@ const ResponsiveAppBar = () => {
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
-              LOGO
+             SOLUTION HUB
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -94,7 +94,9 @@ const ResponsiveAppBar = () => {
                   </Link>
                 ))}
               </Menu>
+              
             </Box>
+           
             <Typography
               variant="h6"
               noWrap

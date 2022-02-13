@@ -12,7 +12,7 @@ import ProjectDetails from '../Project';
     return (
       <div>
       <HeroSection />
-      {/*<ProjectDetails/>*/}
+      
       <Cards/>
       <Footer/>
       </div>

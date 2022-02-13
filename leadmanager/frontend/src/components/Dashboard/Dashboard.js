@@ -14,13 +14,13 @@ import { useEffect } from "react";
 import store from "../../store";
 import { loadUser } from "../../actions/auth";
 import { connect } from "react-redux";
-import { Navigate } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Login from "../accounts/Login";
+import Header from "../components/Header";
 
 
 function Dashboard(auth) {
-
   // useEffect(() => {
   //   store.dispatch(loadUser());
   // },[]);
@@ -194,8 +194,7 @@ function Dashboard(auth) {
     },
   ];
 
-
-  return(
+  return (
     <>
       <Navbar />
       <CssBaseline />
@@ -255,13 +254,23 @@ function Dashboard(auth) {
           </div>
         </div>
       </section>
+      <div className="container mt-5">
+        <Header head="Your Posts" />
+      </div>
       <YourPosts />
+
+      <div className="container mt-5">
+        <Header head="Your Requests" />
+      </div>
+      <div className="container a-center">
+        <YourPosts />
+      </div>
     </>
-    );
+  );
 }
 
-const mapStateToProps = state => ({
-  auth: state.auth
+const mapStateToProps = (state) => ({
+  auth: state.auth,
 });
 
 export default connect(mapStateToProps)(Dashboard);

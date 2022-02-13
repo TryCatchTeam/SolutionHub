@@ -12,6 +12,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import SignInSide from "./Auth/SignInSide";
 import SignUpSide from "./Auth/SignUpSide";
 import Posts from "./Posts/Posts";
+import Project from "./skcomponents/Project";
 
 import "./Posts.css";
 import "./EditProfile.css";
@@ -77,6 +78,7 @@ class App extends Component {
               <Route exact path="/SendReq/SendReqForm" element={<SendReqForm />}/>
                 
               {/* </Route> */}
+              <Route exact path="/skcomponents/Project" element={<Project/>}/>
             </Routes>
           </Router>
         </AlertProvider>

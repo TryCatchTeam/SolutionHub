@@ -2,10 +2,11 @@ import React from 'react'
 import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
 import { Chip, Divider } from '@material-ui/core';
 import { Directions } from '@mui/icons-material';
-
+import { Link } from 'react-router-dom';
 
 import AssistantPhotoRoundedIcon from '@mui/icons-material/AssistantPhotoRounded';
-const ProjectDetails = () => {
+
+const Project = () => {
   return (
     <div style={{display:'flex',background:'white',flexDirection:'column',margin:'0px',padding:'5px'}}>
         <div style={{display:'flex'}}>
@@ -55,9 +56,15 @@ const ProjectDetails = () => {
         </div>
         </div>
         </div>
+       {/* <Link to ='/SendReq/SendReqForm'>*/}
+   <div className='btn btn-primary'>
+     
+     Apply
+   </div>
+   
 
     </div>
   )
 }
 
-export default ProjectDetails
+export default Project
