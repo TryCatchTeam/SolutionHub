@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { CardMedia } from "@mui/material";
 
 function ImageHeader(props) {

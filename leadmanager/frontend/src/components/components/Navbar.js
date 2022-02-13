@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Badge from "@mui/material/Badge";
 import MailIcon from "@mui/icons-material/Mail";
-import Link from "@mui/material/Link";
+import { Link, Navigate } from 'react-router-dom';
 
 const pages = [
   { title: "Home", path: "/" },
@@ -87,7 +87,7 @@ const ResponsiveAppBar = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <Link key={page.title} href={page.path} underline="hover">
+                  <Link key={page.title} to={page.path} underline="hover">
                     <MenuItem onClick={handleCloseNavMenu}>
                       <Typography textAlign="center">{page.title}</Typography>
                     </MenuItem>
@@ -105,7 +105,7 @@ const ResponsiveAppBar = () => {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
-                <Link key={page.title} href={page.path} underline="hover">
+                <Link key={page.title} to={page.path} underline="hover">
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, mx: 3, color: "white", display: "block" }}

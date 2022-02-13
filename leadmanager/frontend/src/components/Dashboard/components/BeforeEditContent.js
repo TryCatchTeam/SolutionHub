@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 function BeforeEditContent(props) {
   return (
     <div className="a-before-edit">

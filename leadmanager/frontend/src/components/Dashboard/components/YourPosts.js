@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { Container } from "@material-ui/core";
 import YourPostsCard from "./YourPostsCard";
 

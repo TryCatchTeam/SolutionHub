@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 function AfterEditContent(props) {
   return (
     <div className="a-after-edit">

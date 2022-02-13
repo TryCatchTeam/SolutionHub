@@ -10,8 +10,21 @@ import MyModal from "./components/MyModal";
 import BeforeEditSkills from "./components/BeforeEditSkills";
 import ImageHeader from "./components/ImageHeader";
 import YourPosts from "./components/YourPosts";
+import { useEffect } from "react";
+import store from "../../store";
+import { loadUser } from "../../actions/auth";
+import { connect } from "react-redux";
+import { Navigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import Login from "../accounts/Login";
 
-function Dashboard() {
+
+function Dashboard(auth) {
+
+  // useEffect(() => {
+  //   store.dispatch(loadUser());
+  // },[]);
+
   const [show, setShow] = useState({
     Username: true,
     FirstName: true,
@@ -181,7 +194,8 @@ function Dashboard() {
     },
   ];
 
-  return (
+
+  return(
     <>
       <Navbar />
       <CssBaseline />
@@ -243,7 +257,11 @@ function Dashboard() {
       </section>
       <YourPosts />
     </>
-  );
+    );
 }
 
-export default Dashboard;
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(mapStateToProps)(Dashboard);

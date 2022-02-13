@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 function BeforeUneditableContent(props) {
   return (
     <div className="a-before-edit">
