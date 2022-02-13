@@ -1,0 +1,46 @@
+.a-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  opacity: 90%;
+  font-weight: 700;
+}
+
+.a-title-small {
+  font-size: 18px;
+  opacity: 90%;
+  font-weight: 800;
+}
+
+.a-secondary-title {
+  font-weight: 700;
+  opacity: 90%;
+}
+
+.a-row-wrapper {
+  border-bottom: 1px solid #eeeeee;
+  padding: 12px 0px;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-radio-title {
+  font-size: 10px;
+  opacity: 70%;
+  font-weight: 700;
+}
+
+.a-card-post-date {
+  padding: 4px;
+  margin-left: 5px !important;
+}
+
+@media (max-width: 993px) {
+  .a-card-post-date {
+    padding: 0px;
+    margin-left: 0px !important;
+  }
+}
